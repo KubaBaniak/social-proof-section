@@ -1,0 +1,42 @@
+@import '../../globals.scss';
+
+.recommendation-card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background: $DarkMagneta ;
+  border-radius: 10px;
+  color: white;
+  gap: 20px;
+
+  .author {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    img {
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+    }
+
+    .author-data {
+      display: flex;
+      flex-direction: column;
+
+      span:nth-child(1) {
+        font-weight: bold;
+      }
+
+      span:nth-child(2) {
+        color: $Pink;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .recommendation-card {
+    gap: 10px;
+  }
+}

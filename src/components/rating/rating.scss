@@ -1,0 +1,38 @@
+@import '../../globals.scss';
+
+.rating {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 60px 10px 20px;
+  border-radius: 10px;
+  gap: 20px;
+  background-color: $LightGrayishMagneta;
+
+  .stars {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    img {
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  span {
+    color: $DarkMagneta;
+    font-weight: bold;
+    text-wrap: nowrap;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .rating {
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+  }
+}

@@ -8,6 +8,7 @@ const lorem =
 function App() {
   return (
     <div className="main">
+      <div className="background-top"></div>
       <div className="main-content">
         <div className="text-section">
           <h1>10,000+ of our uses love our products.</h1>
@@ -28,6 +29,7 @@ function App() {
         <Recommendation name="Irene Roberts" text={lorem} />
         <Recommendation name="Anne Wallace" text={lorem} />
       </div>
+      <div className="background-bottom"></div>
     </div>
   );
 }

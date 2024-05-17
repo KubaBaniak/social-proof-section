@@ -6,12 +6,14 @@
   padding: 30px;
   background: $DarkMagneta ;
   border-radius: 10px;
+  width: auto;
   color: white;
   gap: 20px;
 
   .author {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 20px;
 
     img {
@@ -35,7 +37,14 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 900px) {
+  .recommendation-card {
+    gap: 15px;
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
   .recommendation-card {
     gap: 10px;
   }

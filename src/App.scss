@@ -107,18 +107,20 @@ span {
 }
 
 @media only screen and (max-width: 900px) {
-  .main-content {
-    .text-section {
-      align-items: center;
+  .main {
+    .main-content {
+      .text-section {
 
-      h1 {
-        font-size: 30px;
-      }
+        h1 {
+          font-size: 30px;
+        }
 
-      span {
-        font-size: 16px;
+        span {
+          font-size: 16px;
+        }
       }
     }
+
   }
 }
 
@@ -131,47 +133,49 @@ span {
     background-image: url("./assets/images/bg-pattern-bottom-mobile.svg");
   }
 
-  .main-content {
-    flex-direction: column;
-    text-align: center;
-
-    .text-section {
-      align-items: center;
-
-      h1 {
-        width: auto !important;
-      }
-
-      span {
-        width: auto !important;
-      }
-    }
-
-    .ratings {
-      display: flex;
+  .main {
+    .main-content {
       flex-direction: column;
-      gap: 20px;
+      text-align: center;
 
-      .rating:nth-child(1) {
-        transform: none !important;
+      .text-section {
+        align-items: center;
+
+        h1 {
+          width: auto;
+        }
+
+        span {
+          width: auto;
+        }
       }
 
-      .rating:nth-child(2) {
-        transform: none !important;
+      .ratings {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .rating:nth-child(1) {
+          transform: none;
+        }
+
+        .rating:nth-child(2) {
+          transform: none;
+        }
       }
     }
-  }
 
-  .recommendation-section {
-    flex-direction: column;
-    gap: 10px !important;
+    .recommendation-section {
+      flex-direction: column;
+      gap: 10px;
 
-    .recommendation-card:nth-child(2) {
-      transform: none !important;
-    }
+      .recommendation-card:nth-child(2) {
+        transform: none;
+      }
 
-    .recommendation-card:nth-child(3) {
-      transform: none !important;
+      .recommendation-card:nth-child(3) {
+        transform: none;
+      }
     }
   }
 }

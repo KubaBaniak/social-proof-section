@@ -1,15 +1,15 @@
-import star from "../../assets/images/icon-star.svg";
+import { IconStar } from "../icon-star/icon-star";
 import "./rating.scss";
 
 function Rating({ service }: { service: string }) {
   return (
     <div className="rating">
       <div className="stars">
-        <img src={star} />
-        <img src={star} />
-        <img src={star} />
-        <img src={star} />
-        <img src={star} />
+        <IconStar />
+        <IconStar />
+        <IconStar />
+        <IconStar />
+        <IconStar />
       </div>
       <span>Rated 5 Stars in {service}</span>
     </div>
